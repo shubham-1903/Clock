@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Quick Launcher</title>
+  <!-- <style>
+    html,body{
+      /* font-family:'Open Sans',sans-serif;
+       */
+      font-family: 'Kaisei Tokumin', serif;
+      font-size: 14px;
+      margin:0;
+      min-height: 180px;
+      padding:0;
+      width: 384px;
+    }
+    h1{
+      font-family: 'Menlo',monospace;
+      font-size: 22px;
+      font-weight:400;
+      margin:0;
+      color:#2f5876;
+    }
+    a:link, a:visited{
+      color:#000;
+      outline: 0;
+      text-decoration: none;
+    }
+    img{
+      width:30px;
+    }
+    .modal-header{
+      align-items: center;
+      border-bottom: 0.5px solid #dadada;
+    }
+    .modal-content{
+      padding:0 22px;
+    }
+    .modal-icons{
+      border-top: 0.5px solid #dadada;
+      height:50px;
+      width:100%;
+    }
+    .logo{
+      padding:16px;
+    }
+    .logo-icon{
+      vertical-align:text-bottom;
+      margin-right: 12px;
+    }
+    .version{
+      color:#444;
+      font-size: 12px;
+    }
+    .flex-container{
+      display:flex;
+      justify-content:space-between;
+      padding:10px 22px;
+    }
+    .flex{
+      opacity:1;
+      transition:opacity 0.2s ease-in-out;
+      width: 120px;
+    }
+    .flex:hover{
+      opacity:0.4;
+    }
+    .flex .fa{
+      font-size: 40px;
+      color:#2f5876
+    }
+  </style> -->
+  <style>
+      html,body{
+      /* font-family:'Open Sans',sans-serif;
+       */
+      font-family: 'Kaisei Tokumin', serif;
+      font-size: 14px;
+      margin:0;
+      min-height: 100px;
+      padding:0;
+      width: 300px;
+    }
+    .container{
+      display:flex;
+      background-color: antiquewhite;
+      justify-content:center;
+      align-items:center;
+      flex-direction: column;
+    } 
+    .sub_container{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background-color: aqua;
+      flex-direction: row;
+      width:100%;
+      border: 1px solid black;
+    }
+    .sub1{
+      height:30px;
+    }
+    .sub_container h6{
+      /* display:flex; */
+      /* background-color:red; */
+      /* justify-content:flex-start; */
+      width:100%;
+    }
+    .date_number{
+      font-size: 1rem;
+      /* font-family:Georgia, 'Times New Roman', Times, serif;
+       */
+      
+    }
+    .year{
+      display: flex;
+      justify-content:flex-end;
+      font-size: 1rem;
+      padding-right: 3px;
+    }
+    .sub2{
+      height:50px;
+      justify-content:space-evenly;
+    }
+    .sub2>span {
+      font-size: 3rem;
+      font-weight: 500;
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+    .sub3{
+      height:20px;
+    }
+    .day{
+      font-size: 1rem;
+      font-family:'Courier New', Courier, monospace;
+      /* font-style: oblique; */
+      font-variant: small-caps;
+      text-transform: uppercase;
+      text-align: justify;
+      text-decoration-color: chartreuse;
+      color: rgb(56, 11, 32);
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sub_container sub1">
+      <h6 class="date_number">
+        <span id="date">15</span>
+        <span class="month" id="month">March</span>
+      </h6>
+      <h6 class="year" id="year">2030</h6>
+    </div>
+    <div class="sub_container sub2">
+      <span class="time" id="hr">20</span>:
+      <span class="time" id="min">50</span>:
+      <span class="time" id="sec">12</span>
+    </div>
+    <div class="sub_container sub3">
+      <h5 class="day" id="day">Tuesday</h5>
+    </div>
+  </div>
+  <!-- <div id="demo"></div>
+  <div id="demo1"></div>
+  <div id="demo2"></div>
+  <div id="demo3"></div>
+  <div id="demo4"></div> -->
+  <script src="popup.js"></script>
+</body>
+</html>
